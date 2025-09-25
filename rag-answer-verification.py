@@ -11,12 +11,12 @@ from dotenv import load_dotenv
 import tempfile
 
 # .env 파일에서 환경 변수 로드
-load_dotenv()
-openai_api_key = os.getenv("OPENAI_API_KEY")
+#load_dotenv()
+#openai_api_key = os.getenv("OPENAI_API_KEY")
 
-if not openai_api_key:
-    st.error("OpenAI API 키를 .env 파일에 설정해 주세요.")
-    st.stop()
+#if not openai_api_key:
+#    st.error("OpenAI API 키를 .env 파일에 설정해 주세요.")
+#    st.stop()
 
 @st.cache_resource
 def load_and_process_docs(uploaded_file):
